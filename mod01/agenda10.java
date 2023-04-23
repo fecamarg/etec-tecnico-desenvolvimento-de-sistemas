@@ -3,8 +3,6 @@
     Curso: Técnico em Desenvolvimento de Sistemas
     Matéria: Desenvolvimento de Sistemas I
     Agenda: 10
-    Professor: Eduardo Chagas Ferreira
-    Aluno: Felipe Camargo de Godoy
 
     Atividade:
     Paulo, o estudante do Ensino Médio que você conheceu no Mergulhando no Tema, agora deseja criar um programa que
