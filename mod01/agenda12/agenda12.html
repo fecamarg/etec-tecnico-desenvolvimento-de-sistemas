@@ -1,0 +1,115 @@
+<!-- 
+    Escola: ETEC
+    Curso: Técnico em Desenvolvimento de Sistemas
+    Matéria: Desenvolvimento de Sistemas I
+    Agenda: 12
+
+    Atividade:
+    Nesta atividade você é convidado a desenvolver uma página web para guardar os seus sites favoritos. Vamos lá!
+
+     - No título (aba) da página: Meus sites favoritos
+     - No título do corpo da Página: Meus sites favoritos: Seu Nome
+     - No corpo da página, insira:
+     - 5 imagens de sites que você gosta;
+     - Abaixo de cada imagem, insira o link para o site;
+     - Acima de cada imagem, insira o nome do site.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus sites favoritos</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: larger;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background-color: #333;
+            color: tomato;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        p {
+            padding: 20px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        img {
+            height: 350px;
+            width: 350px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #3e8e41;
+        }
+        section {
+            background-color: lightgray;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meus sites favoritos</h1>
+        <p>Aqui estão alguns dos meus sites favoritos e por que eu gosto deles:</p>
+    </header>
+
+    <section>
+        <h2>Youtube</h2>
+        <img src="imagens/logo-youtube.png" alt="logo do youtube">
+        <p>O Youtube é uma plataforma incrível para aprender, se divertir, e se informar. Eu adoro assistir vídeos e ouvir música por lá.</p>
+        <a href="http://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="btn">Ir para o site</a>
+    </section>
+
+    <section>
+        <h2>Promobit</h2>
+        <img src="imagens/logo-promobit.png" alt="logo do promobit">
+        <p>O Promobit é um site que reúne ofertas e promoções da internet. Eu gosto de fuçar os produtos por lá, e acompanhar os que estou precisando em uma lista de desejos As vezes também posto algumas promoções, já que são os próprios usuários que indicam, e a plataforma verifica antes de publicar.</p>
+        <a href="https://www.promobit.com.br/" target="_blank" rel="noopener noreferrer" class="btn">Ir para o site</a>
+    </section>
+
+    <section>
+        <h2>TabNews</h2>
+        <img src="imagens/logo-tabnews.png" alt="logo do tabnews">
+        <p>O TabNews é um site de notícias que gosto de usar para ficar atualizado sobre as últimas notícias do mundo da tecnologia. Sem fakes, enrolação e anúncios explodindo na sua tela.</p>
+        <a href="https://www.tabnews.com.br/recentes" target="_blank" rel="noopener noreferrer" class="btn">Ir para o site</a>
+    </section>
+
+    <section>
+        <h2>Curso em Vídeo</h2>
+        <img src="imagens/logo-cursoemvideo.png" alt="logo do curso em video">
+        <p>O Curso em Vídeo é um site que oferece cursos gratuitos de programação, design e outras áreas de tecnologia. Estou fazendo vários cursos por lá.</p>
+        <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer" class="btn">Ir para o site</a>
+    </section>
+
+    <section>
+        <h2>Duolingo</h2>
+        <img src="imagens/logo-duolingo.png" alt="logo do duolingo">
+        <p>O Duolingo é um aplicativo que eu uso para aprender ingles. Ele é divertido, fácil de usar e eficaz. Além de ter outros idiomas para aprender também!.</p>
+        <a href="https://www.duolingo.com/" target="_blank" rel="noopener noreferrer" class="btn">Ir para o site</a>
+    </section>
