@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700; /* Cor dourada para destacar o título */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para permitir que as colunas sejam dispostas verticalmente em telas menores */
+}
+
+.column {
+    flex: 1 1 200px; /* Ajuste o valor '200px' conforme necessário */
+    margin: 10px;
+    text-align: center;
+}
+
+.column h2 {
+    color: #FFD700; /* Cor dourada para destacar os subtítulos */
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem preencha toda a área disponível, cortando se necessário */
+}
