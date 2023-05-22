@@ -1,0 +1,276 @@
+<!-- 
+    Escola: ETEC
+    Curso: Técnico em Desenvolvimento de Sistemas
+    Matéria: Desenvolvimento de Sistemas I
+    Agenda: 13
+
+    Atividade:
+
+    Criar um site com fotos e informações sobre atrativos turísticos da cidade em que mora.
+
+    Para este projeto, seguir as seguintes solicitações:
+
+    • No título (aba) da página Atrativos Turísticos - NOME DA CIDADE
+
+    • No corpo da página:
+
+    Deverá ser dividido em colunas com no mínimo seis atrativos turísticos da cidade.
+
+    Atenção:
+
+    Fique atento para colocar o link correto das imagens na codificação da página e, caso a opção seja usar as imagens localmente no dispositivo, você deve criar uma pasta  contendo o arquivo HTML da atividade e as devidas imagens. ENVIAR ESSA PASTA COMPACTADA.
+
+    Dicas:
+
+    • Colocar título da página nas entre a tag < title > e < /title >;
+
+    • Usar a tag < h2 > para título de cada coluna/linha
+
+    Colocar a imagem dos atrativos turísticos na mesma pasta do arquivo html ou criar uma pasta apenas para imagens;
+
+    • Pesquisar links interessantes para achar fotos de atrativos turísticos
+
+    • Para os efeitos utilizar w3-hover-opacityou acesse o link abaixo e veja mais tipos de animações.
+
+    https://www.w3schools.com/w3css/w3css_animate.asp
+
+    Obs.: Não esqueça de colocar a referência das fotos.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/w3.css">
+    <title>Atrativos Turísticos - Bragança Paulista</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #3c8dbc;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .w3-row-padding .w3-col {
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        p span {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #3c8dbc;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-container w3-center">
+        <h1>Atrativos Turísticos - Bragança Paulista - SP</h1>
+    </div>
+
+    <div class="container">
+        <div class="w3-row-padding section">
+            <div class="w3-col m4">
+                <h2 class="section-title">Lago do Taboão</h2>
+                <img src="imagens/lago-do-taboao.jpg" alt="Lago do Taboão">
+                <div class="section-content">
+                    <p>
+                        Cartão-postal da cidade, orgulho entre cada 10 de 10 bragantinos, a entrada da cidade tem seu ponto forte na chegada ao Lago do Taboão, cartão-postal e ponto de encontro para tudo e para todos. Construído artificialmente, o lago faz parte da paisagem urbana de Bragança e encanta todos com sua beleza. Os motivos que levam os bragantinos e visitantes ao lago podem variar muito, mas, indiscutivelmente, o local convida ao contato com a natureza e ao lazer, sendo palco perfeito para práticas esportivas, passeios sem compromisso ou, simplesmente, para o convívio familiar. Essa interação socioambiental, proporcionada pelo local, é regada pelo ar puro que vem da mata ao redor da região. O lago é ponto de referência de fácil localização na cidade. É cercado por pontos comerciais que exploram a gastronomia e oferecem variada infraestrutura de serviços. O lago é, sem dúvida, o lugar mais popular de Bragança.
+                    </p>
+                    <p>
+                        "Por volta de 1830-1850, o vigário da cidade – Pe. José Jacinto da Silveira – era dono de grande extensão de terras, na região do baixo Caetê até o alto do Campo Novo. Nessas terras existia uma lagoa conhecida como Tanque do Padre Jacinto."
+                    </p>
+                    <p>
+                        "Esse mesmo tanque, no início do último século, era chamado por Tanque do Canivete. Era formado pelas águas dos ribeirões Caetê e Bocaina, onde grande pescaria de taraira se fazia. Aquele tanque, com o passar dos anos, desapareceu da paisagem taboense, ressurgindo na década de 1960, e é hoje é o nosso Lago do Taboão."
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://www.al.sp.gov.br/noticia/?id=370549">https://www.al.sp.gov.br/noticia/?id=370549</a></span><br>
+                        <span>Texto retirado de: <a href="https://www.cidadeecultura.com/lago-do-taboao/">https://www.cidadeecultura.com/lago-do-taboao/</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col m4">
+                <h2 class="section-title">Estádio Nabi Abi Chedid</h2>
+                <img src="imagens/estadio-nabi.jpg" alt="Estádio Nabi Abi Chedid">
+                <div class="section-content">
+                    <p>
+                        Construída em 1949, nossa casa respira história e já foi palco de inúmeros jogos decisivos. Por aqui pisaram vários craques, campeões do mundo e atletas que honraram nossa camisa.
+                    </p>
+                    <p>
+                        Dentre todos os estádios do país, o Nabizão tem mais de um motivo para se tornar único. Além do ambiente fanático e acolhedor, nossa casa é notável pelo famoso sanduíche de linguiça, comida típica que elevou o nome de Bragança Paulista.
+                    </p>
+                    <p>
+                        E, claro, há também as conquistas. Entre as mais memoráveis, o jogo contra o Novorizontino, em 1990, que deu o inédito título do Campeonato Paulista ao clube, e o título da conquista da Série B do Brasileiro, em 1989.
+                    </p>
+                    <p>
+                        Recentemente, revivemos momentos felizes e marcantes com o bicampeonato da segunda divisão nacional. A campanha irretocável, que nos deu o troféu de campeão, terminou sem derrota no Nabizão e nos mostrou a força de nosso estádio e torcida.
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://www.braganca.sp.gov.br/noticias/final-da-copa-sul-americana-2021-tera-evento-de-transmissao-no-estadio-nabi-abi-chedid">https://www.braganca.sp.gov.br/noticias/final-da-copa-sul-americana-2021-tera-evento-de-transmissao-no-estadio-nabi-abi-chedid</a></span><br>
+                        <span>Texto retirado de: <a href="https://www.redbullbragantino.com.br/estadio/informacoes-gerais">https://www.redbullbragantino.com.br/estadio/informacoes-gerais</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col m4">
+                <h2 class="section-title">Bragança Garden Shopping</h2>
+                <img src="imagens/bragança-shopping.jpg" alt="Bragança Garden Shopping">
+                <div class="section-content">
+                    <p>
+                        O Bragança Garden Shopping é o primeiro empreendimento de varejo da região de Bragança Paulista. Fica localizado na Rodovia Alkindar Junqueira Monteiro, 1013 km 53 - Quinta da Baroneza 02.
+                    </p>
+                    <p>
+                        Com uma classe AB que representa mais de 35% da população da cidade e mais de 740 mil consumidores na área de influência expandida, o empreendimento atende a demanda de um público carente por um shopping grande e cheio de novidades.
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://grupotenco.com.br/inauguracao-braganca-garden-shopping/">https://grupotenco.com.br/inauguracao-braganca-garden-shopping/</a></span><br>
+                        <span>Texto retirado de: <a href="http://www.digitalmapas.com.br/anunciante/386/braganca-garden-shopping/">http://www.digitalmapas.com.br/anunciante/386/braganca-garden-shopping/</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row-padding section">
+            <div class="w3-col m4">
+                <h2 class="section-title">Museu Municipal Oswaldo Russomano</h2>
+                <img src="imagens/museu-municipal-oswaldo.jpg" alt="Museu Municipal Oswaldo Russomano">
+                <div class="section-content">
+                    <p>
+                        O Museu Municipal de Bragança Paulista foi criado através do Projeto de Lei nº. 200/51, de 15 de setembro de 1951, de autoria do ex-vereador Saturnino Pacitti que, aprovado, foi transformado na Lei nº. 166, de 24 de outubro de 1953, que também criou a Biblioteca Pública Municipal.
+                    </p>
+                    <p>
+                        O Museu Municipal "Oswaldo Russomano" é o símbolo do patrimônio de Bragança Paulista, cidade de tradição histórica e cultural. Desde os tempos coloniais, Bragança se diferenciava por ser a cidade de onde saíam as tropas tanto para o interior como para o litoral. Já no tempo do Império se destacou por ser a cidade querida e agraciada por Dom Pedro II.
+                    </p>
+                    <p>
+                        O Museu Municipal "Oswaldo Russomano" foi inaugurado em 15 de dezembro de 1966. Na década de 1980, após algumas mudanças de local, instalou-se definitivamente à rua Cel. João Leme, 520, no centro da cidade.
+                    </p>
+                    <p>
+                        A casa onde o museu está instalado data de 1896, construída para ser a residência do Cel. Afonso Olegário Ferreira Pinto e sua esposa, D. Maria Salomé de Leme Ferreira. A casa, esplendor do ciclo do café na região bragantina, coincide com o final do Império e o início da República. O empreiteiro construtor foi italiano.
+                    </p>
+                    <p>
+                        O acervo de aproximadamente 3.000 peças expõe objetos pessoais de grandes nomes da história do município e peças que retratam a época dos barões do café, dos constitucionalistas e a ocupação indígena do Guaripocaba. Encontram-se ainda louças, instrumentos musicais, móveis da antiga Câmara Municipal e objetos da extinta Estrada de Ferro Bragantina.
+                    </p>
+                    <p>
+                        Ao visitá-lo, as pessoas voltam ao passado, identificando a história local em contato com períodos de importante mudança cultural e tecnológica, como o período imperial, a escravidão, a Segunda Guerra Mundial, a Revolução Constitucionalista de 32 e artefatos arqueológicos.
+                    </p>
+                    <p>
+                        No Museu pode-se ainda ver: objetos da arte sacra, máquinas fotográficas, relógios, TVs e rádios de época, fotografias do acervo histórico, objetos dos combatentes, além de peças que retratam o ambiente doméstico e a moda antiga, além de artesanato e artefatos indígenas.
+                    </p>
+                    <p>
+                        O Museu está equipado com Boulevard (onde alunos utilizam o espaço para, após a visita, fazer o seu lanche), salão de exposições temporárias e realização de oficinas.
+                    </p>
+                    <p>
+                        Fonte: Museu Municipal Oswaldo Russomano<br>
+                        Onde: Rua Coronel João Leme, 520 – Centro
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://www.tripadvisor.com.br/Attraction_Review-g675019-d4376014-Reviews-Oswaldo_Russomano_Municipal_Museum-Braganca_Paulista_State_of_Sao_Paulo.html">https://www.tripadvisor.com.br/Attraction_Review-g675019-d4376014-Reviews-Oswaldo_Russomano_Municipal_Museum-Braganca_Paulista_State_of_Sao_Paulo.html</a></span><br>
+                        <span>Texto retirado de: <a href="https://www.cidadeecultura.com/museu-municipal-oswaldo-russomano/">https://www.cidadeecultura.com/museu-municipal-oswaldo-russomano/</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col m4">
+                <h2 class="section-title">Museu do Telefone</h2>
+                <img src="imagens/museu-do-telefone.jpg" alt="Museu do Telefone">
+                <div class="section-content">
+                    <p>
+                        "Com inigualável brilhantismo, na noite de 02 de março de 1908, inaugurou-se o novo edifício para instalação da sede da CRTB, Companhia Rede Telephonica Bragantina. A planta do edifício foi levantada pelo arquiteto Sr. Henrique Mondelli, que também dirigiu o serviço do cimento armado, o primeiro feito em Bragança. O edifício construído é de pedra, tijolo e coberto de cimento armado, tendo de madeira, apenas as portas e os caixilhos. No pavimento térreo, funcionavam: na entrada, a sala de espera e as cabinas para as conversações e em seguida, o escritório, o gabinete e dormitório do chefe da estação, a oficina e o depósito em seus respectivos compartimentos."
+                    </p>
+                    <p>
+                        "No primeiro andar residia com a família o gerente da empresa. No segundo andar estava instalado um comutador central typo, do fabricante Kellog, com capacidade para 200 circuitos metálicos, ligado por um cabo de 400 fios a um moderno para-raio munido de fusíveis caloríficos, instalado numa cabina dentro da torre de ferro para onde convergiam os fios da rede telefônica geral. A referida torre tinha a capacidade para mais 400 linhas, media 4 metros de altura por 2 ½ de largura e estava situada a 16 metros do solo."
+                    </p>
+                    <p>
+                        "Junto à torre, no último pavimento, estava construído o reservatório d´água da cidade, com capacidade para 20.000 litros."
+                    </p>
+                    <p>
+                        "O serviço telephonico instalado em Bragança Paulista era à magneto, que atingia, em 1908, a quantia de 185 assinantes. A rede abrangia todos os pontos da cidade e as residências mais longínquas da zona suburbana."
+                    </p>
+                    <p>
+                        Fonte: Memórias de Bragança Paulista, de Angelo V. Guido, 1949 <br>
+                        Onde: Rua Cel. João Leme, 520 – Centro
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://www.tripadvisor.com.br/Attraction_Review-g675019-d4376014-Reviews-Oswaldo_Russomano_Municipal_Museum-Braganca_Paulista_State_of_Sao_Paulo.html">https://www.tripadvisor.com.br/Attraction_Review-g675019-d4376014-Reviews-Oswaldo_Russomano_Municipal_Museum-Braganca_Paulista_State_of_Sao_Paulo.html</a></span><br>
+                        <span>Texto retirado de: <a href="https://www.cidadeecultura.com/museu-municipal-oswaldo-russomano/">https://www.cidadeecultura.com/museu-municipal-oswaldo-russomano/</a></span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="w3-col m4">
+                <h2 class="section-title">Igreja de Nossa Senhora do Rosário</h2>
+                <img src="imagens/igreja-rosario.jpg" alt="Igreja de Nossa Senhora do Rosário">
+                <div class="section-content">
+                    <p>
+                        A Igreja de Nossa Senhora do Rosário foi construída pelos escravos que trabalhavam nas fazendas de café da região, no século XIX. A igreja é um exemplo da religiosidade e da cultura afrodescendente presente em Bragança Paulista.
+                    </p>
+                    <p>
+                        Com sua arquitetura colonial e fachada simples, a igreja é um ponto de referência histórica e religiosa na cidade. Seu interior é ornamentado com imagens sacras e pinturas que retratam a devoção a Nossa Senhora do Rosário.
+                    </p>
+                    <p>
+                        Além de sua importância religiosa, a igreja também é palco de eventos culturais e festas tradicionais, como a Festa de Nossa Senhora do Rosário, que acontece anualmente e reúne fiéis e visitantes.
+                    </p>
+                    <p>
+                        <span>Foto retirada de: <a href="https://www.tripadvisor.com.br/Attraction_Review-g675019-d9981181-Reviews-Igreja_de_Nossa_Senhora_do_Rosario-Braganca_Paulista_State_of_Sao_Paulo.html">https://www.tripadvisor.com.br/Attraction_Review-g675019-d9981181-Reviews-Igreja_de_Nossa_Senhora_do_Rosario-Braganca_Paulista_State_of_Sao_Paulo.html</a></span><br>
+                        <span>Texto retirado de: <a href="https://www.cidadeecultura.com/igreja-de-nossa-senhora-do-rosario/">https://www.cidadeecultura.com/igreja-de-nossa-senhora-do-rosario/</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
