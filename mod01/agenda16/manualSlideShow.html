@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Slide Show</title>
+</head>
+<body>
+<h2 class="w3-center">Slideshow Manual</h2>
+    <div class="w3-content w3-display-container w3-center" style="max-width:500px">
+        <img class="slide" src="imagens/arvore-nascer-do-sol.jpg" alt="Árvore ao Nascer do Sol" style="width:100%">
+        <img class="slide" src="imagens/arvore-outono.jpg" alt="Árvore no Outono" style="width:100%">
+        <img class="slide" src="imagens/arvore-inverno.jpg" alt="Árvore no Inverno" style="width:100%">
+        <img class="slide" src="imagens/arvore-primavera.jpg" alt="Árvore na Primavera" style="width:100%">
+        <img class="slide" src="imagens/arvore-verao.jpg" alt="Árvore no Verão" style="width:100%">
+        <img class="slide" src="imagens/arvore-por-do-sol.jpg" alt="Árvore ao Pôr do Sol" style="width:100%">
+        <a href="http://www.freepik.com">Designed by Vu-Manh-Tien / Pixabay - Imagem 1</a>
+        <br>
+        <a href="http://www.freepik.com">Designed by giani / Pixabay - Imagem 2</a>
+        <br>
+        <a href="http://www.freepik.com">Designed by Hans / Pixabay - Imagem 3</a>
+        <br>
+        <a href="http://www.freepik.com">Designed by shogun / Pixabay - Imagem 4</a>
+        <br>
+        <a href="http://www.freepik.com">Designed by TheDigitalArtist / Pixabay - Imagem 5</a>
+        <a href="http://www.freepik.com">Designed by Bessi / Pixabay - Imagem 6</a>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(- 1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <script>
+        var slideIndex = 1; 
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slide"); 
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            } 
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
