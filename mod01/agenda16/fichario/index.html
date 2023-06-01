@@ -49,6 +49,19 @@
             font-family: "Montserrat", sans-serif;
         }
 
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .Slides {
+            display: block;
+            width: 100%;
+        }
+
         @media only screen and (max-width: 600px) {
             #main {
                 margin-left: 0;
@@ -224,70 +237,83 @@
         <div class="w3-content w3-padding-64" id="docentes">
             <h2 class="w3-text-cyan">Docentes</h2>
             <hr style="width:200px" class="w3-opacity">
-
+        
             <div class="w3-container">
-                <!-- Card do Docente 1 -->
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <img src="IMG/professor1.png" alt="Foto Docente 1" class="w3-border w3-image w3-margin-bottom">
-                    </div>
-                    <div class="w3-half">
-                        <div class="docente-info w3-padding-16">
-                            <h3 class="w3-text-cyan">Prof. Dr. João Silva</h3>
-                            <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                            <p>Doutor em Ciência da Computação pela Universidade de São Paulo</p>
-                            <h4 class="w3-text-cyan">Atuação Profissional</h4>
-                            <p>Atua principalmente em sistemas distribuídos e computação em nuvem.</p>
+                <div class="slideshow-container">
+                    <!-- Card do Docente 1 -->
+                    <div class="Slides">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="IMG/professor1.png" alt="Foto Docente 1" class="w3-border w3-image w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <div class="docente-info w3-padding-16">
+                                    <h3 class="w3-text-cyan">Prof. Dr. João Silva</h3>
+                                    <h4 class="w3-text-cyan">Formação Acadêmica</h4>
+                                    <p>Doutor em Ciência da Computação pela Universidade de São Paulo</p>
+                                    <h4 class="w3-text-cyan">Atuação Profissional</h4>
+                                    <p>Atua principalmente em sistemas distribuídos e computação em nuvem.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Card do Docente 2 -->
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <img src="IMG/professor2.png" alt="Foto Docente 2" class="w3-border w3-image w3-margin-bottom">
-                    </div>
-                    <div class="w3-half">
-                        <div class="docente-info w3-padding-16">
-                            <h3 class="w3-text-cyan">Profª. Drª. Maria Costa</h3>
-                            <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                            <p>Mestre em Engenharia de Software pelo Instituto Tecnológico de Aeronáutica</p>
-                            <h4 class="w3-text-cyan">Atuação Profissional</h4>
-                            <p>Especialista em inteligência artificial e machine learning.</p>
+        
+                    <!-- Card do Docente 2 -->
+                    <div class="Slides">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="IMG/professor2.png" alt="Foto Docente 2" class="w3-border w3-image w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <div class="docente-info w3-padding-16">
+                                    <h3 class="w3-text-cyan">Profª. Drª. Maria Costa</h3>
+                                    <h4 class="w3-text-cyan">Formação Acadêmica</h4>
+                                    <p>Mestre em Engenharia de Software pelo Instituto Tecnológico de Aeronáutica</p>
+                                    <h4 class="w3-text-cyan">Atuação Profissional</h4>
+                                    <p>Especialista em inteligência artificial e machine learning.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Card do Docente 3 -->
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <img src="IMG/professor3.png" alt="Foto Docente 3" class="w3-border w3-image w3-margin-bottom">
-                    </div>
-                    <div class="w3-half">
-                        <div class="docente-info w3-padding-16">
-                            <h3 class="w3-text-cyan">Prof. Dr. Pedro Santos</h3>
-                            <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                            <p>PhD em Segurança da Informação pela Universidade Federal do Rio de Janeiro</p>
-                            <h4 class="w3-text-cyan">Atuação Profissional</h4>
-                            <p>Atua principalmente em criptografia e segurança de redes.</p>
+        
+                    <!-- Card do Docente 3 -->
+                    <div class="Slides">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="IMG/professor3.png" alt="Foto Docente 3" class="w3-border w3-image w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <div class="docente-info w3-padding-16">
+                                    <h3 class="w3-text-cyan">Prof. Dr. Pedro Santos</h3>
+                                    <h4 class="w3-text-cyan">Formação Acadêmica</h4>
+                                    <p>PhD em Segurança da Informação pela Universidade Federal do Rio de Janeiro</p>
+                                    <h4 class="w3-text-cyan">Atuação Profissional</h4>
+                                    <p>Atua principalmente em criptografia e segurança de redes.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Card do Docente 4 -->
-                <div class="w3-row-padding">
-                    <div class="w3-half">
-                        <img src="IMG/professor4.png" alt="Foto Docente 4" class="w3-border w3-image w3-margin-bottom">
-                    </div>
-                    <div class="w3-half">
-                        <div class="docente-info w3-padding-16">
-                            <h3 class="w3-text-cyan">Profª. Drª. Ana Lopes</h3>
-                            <h4 class="w3-text-cyan">Formação Acadêmica</h4>
-                            <p>PhD em Ciência da Computação pela Universidade de Campinas</p>
-                            <h4 class="w3-text-cyan">Atuação Profissional</h4>
-                            <p>Atua com processamento de linguagem natural e sistemas de recomendação.</p>
+        
+                    <!-- Card do Docente 4 -->
+                    <div class="Slides">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="IMG/professor4.png" alt="Foto Docente 4" class="w3-border w3-image w3-margin-bottom">
+                            </div>
+                            <div class="w3-half">
+                                <div class="docente-info w3-padding-16">
+                                    <h3 class="w3-text-cyan">Profª. Drª. Ana Lopes</h3>
+                                    <h4 class="w3-text-cyan">Formação Acadêmica</h4>
+                                    <p>PhD em Ciência da Computação pela Universidade de Campinas</p>
+                                    <h4 class="w3-text-cyan">Atuação Profissional</h4>
+                                    <p>Atua com processamento de linguagem natural e sistemas de recomendação.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+        
+                    <a class="w3-button w3-black" style="position:absolute; top:50%; left:0" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="w3-button w3-black" style="position:absolute; top:50%; right:0" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
@@ -395,6 +421,25 @@
     </footer>
     <!-- Ícones das redes sociais -->
     
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("Slides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>
 
