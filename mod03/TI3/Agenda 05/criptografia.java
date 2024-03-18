@@ -1,5 +1,13 @@
 import javax.swing.JOptionPane;
 
+//    Comentário explicativo:
+//    Neste código, a conversão de um caractere para um valor da tabela ASCII é realizada através de um cast explícito 
+//    de char para int. Isso é feito para obter o valor numérico correspondente ao caractere na tabela ASCII. 
+//    Por exemplo, (int) c converte o caractere c para seu valor numérico ASCII. 
+//    Da mesma forma, para converter um valor numérico ASCII de volta para um caractere, usamos um cast explícito 
+//    de int para char, como em (char) valorAscii. Isso é útil para manipular caracteres como números, permitindo 
+//    operações matemáticas e, em seguida, convertendo os resultados de volta para caracteres   
+
 public class criptografia {
 
     public static void main(String[] args) {
@@ -126,11 +134,3 @@ public class criptografia {
         JOptionPane.showMessageDialog(null, "Mensagem descriptografada: " + mensagemDescriptografada.toString(), "Mensagem descriptografada", JOptionPane.INFORMATION_MESSAGE);
     }
 }
-
-//    Comentário explicativo:
-//    Neste código, a conversão de um caractere para um valor da tabela ASCII é realizada através de um cast explícito 
-//    de char para int. Isso é feito para obter o valor numérico correspondente ao caractere na tabela ASCII. 
-//    Por exemplo, (int) c converte o caractere c para seu valor numérico ASCII. 
-//    Da mesma forma, para converter um valor numérico ASCII de volta para um caractere, usamos um cast explícito 
-//    de int para char, como em (char) valorAscii. Isso é útil para manipular caracteres como números, permitindo 
-//    operações matemáticas e, em seguida, convertendo os resultados de volta para caracteres   
